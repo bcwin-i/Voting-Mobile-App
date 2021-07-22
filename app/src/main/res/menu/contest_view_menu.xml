@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Start"
+        android:id="@+id/btn_start_contest"/>
+    <item android:title="Details"
+        android:id="@+id/btn_contest_details"/>
+    <item android:title="Delete"
+        android:id="@+id/btn_delete_contest"/>
+</menu>

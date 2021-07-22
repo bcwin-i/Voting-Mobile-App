@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Leave group"
+        android:id="@+id/btn_decide"/>
+    <item android:title="Manage"
+        android:id="@+id/btn_manage"/>
+    <item android:title="Edit"
+        android:id="@+id/btn_edit"/>
+    <item android:title="Details"
+        android:id="@+id/btn_details"/>
+    <item android:title="Delete"
+        android:id="@+id/btn_delete"/>
+</menu>

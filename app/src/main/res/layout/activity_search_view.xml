@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchView"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="@color/colorAccent"
+        app:theme="@style/MyActionBarTheme"
+        app:subtitleTextColor="@color/gray"
+        android:focusableInTouchMode="true"
+        app:titleTextAppearance="@style/group_view_title"
+        app:subtitleTextAppearance="@style/group_view_subtitle"
+        android:elevation="1dp">
+        <EditText
+            android:id="@+id/searchItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_search"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:theme="@style/textHint"
+            android:paddingRight="5dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/search_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:text="querying.."/>
+    <ListView
+        android:id="@+id/search_list_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="1dp"/>
+</LinearLayout>

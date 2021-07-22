@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/armata</item>
+    </style>
+    <style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#293556</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="group_view_title" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/armata</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+    <style name="group_view_subtitle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/armata</item>
+        <item name="android:textColor">@color/deep_gray</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="textHint">
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContestView"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Contest view"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="@color/colorAccent"
+        app:theme="@style/MyActionBarTheme"
+        android:elevation="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@drawable/underline">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:paddingTop="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contest_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_group"
+                android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_contest_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="Class representative"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txt_contest_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="Class representative"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:id="@+id/txt_contest_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:layout_marginTop="6dp"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/contest_timer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="10dp"
+        android:clickable="true"
+        android:text="    Add option"
+        android:fontFamily="@font/biryani"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_timer"
+        android:background="@drawable/underline"
+        android:drawableLeft="@drawable/ic_timer" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/add_contest_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:text="    Add option"
+            android:fontFamily="@font/biryani"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAlignment="textStart"
+            android:drawableStart="@drawable/ic_add_black"/>
+        <TextView
+            android:id="@+id/txt_options_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contest options"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/gray"
+            android:layout_margin="10dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:scrollbars="none">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contest_options_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+        <Button
+            android:id="@+id/add_contest_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bottom_border"
+            android:paddingLeft="10dp"
+            android:text="comments"
+            android:fontFamily="@font/biryani"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAlignment="textStart"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

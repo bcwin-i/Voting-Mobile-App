@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_add_contest"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_add_black"
+        android:fontFamily="@font/biryani"
+        android:padding="10dp"
+        android:text="    Add contest"
+        android:textAlignment="textStart"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/txt_number_store_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contest history"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textColor="@color/gray"
+        android:layout_margin="10dp"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:scrollbars="none"
+    android:background="@color/white">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contest_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </ScrollView>
+    <TextView
+    android:id="@+id/off_join"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="Joined no groups yet."
+    android:visibility="gone"/>
+    <RelativeLayout
+    android:id="@+id/querying_contest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="15dp"
+    android:paddingLeft="10dp">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_add_option"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/view_real_underline"
+        android:text="Joined Groups"
+        android:fontFamily="@font/armata"
+        android:textColor="@color/colorAccent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        android:background="@color/white">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/groups_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"/>
+    </ScrollView>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_dialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/loading"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+
+</LinearLayout>

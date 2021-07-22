@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/view_real_underline"
+        android:text="Complete vote"
+        android:fontFamily="@font/armata"
+        android:textColor="@color/colorAccent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/c_option_image"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/frame"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/c_txt_option_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Kingsley Kissi"
+                android:textColor="@color/real_black"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:text="Cancel"
+            android:layout_marginRight="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/select"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:text="Vote"
+            android:layout_marginLeft="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="right"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_add_option"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</LinearLayout>

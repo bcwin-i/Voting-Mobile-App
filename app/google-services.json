@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "963493028862",
+    "firebase_url": "https://voteon-8af91.firebaseio.com",
+    "project_id": "voteon-8af91",
+    "storage_bucket": "voteon-8af91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963493028862:android:ea35a4f94311d77af616af",
+        "android_client_info": {
+          "package_name": "com.example.voteon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963493028862-oct1ppj1coepeslbbi5vqsknn160qk4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA648iUDXh_Z0-Dwi6YUyS47YhApMj2ITg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963493028862-oct1ppj1coepeslbbi5vqsknn160qk4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

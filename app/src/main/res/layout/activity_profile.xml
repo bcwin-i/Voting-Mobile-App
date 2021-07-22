@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Profile"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="@color/colorAccent"
+        app:theme="@style/MyActionBarTheme"
+        android:elevation="1dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/armata"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_user_email"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/armata"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_underline"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:drawableStart="@drawable/ic_help_outline_black_24dp"
+            android:text="         Help"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/deep_gray"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:drawableStart="@drawable/ic_people_black_24dp"
+            android:text="         Invite a friend"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/deep_gray"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:drawableStart="@drawable/ic_help_black_24dp"
+            android:text="         About"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/deep_gray"
+            android:textSize="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

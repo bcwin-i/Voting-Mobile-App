@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VoteOn</string>
+    <string name="nav_contest">Contest</string>
+    <string name="nav_group">Groups</string>
+    <string name="nav_member">Members</string>
+
+    <string name="weak">weak password!</string>
+    <string name="medium">medium password</string>
+    <string name="strong">strong password</string>
+    <string name="very_strong">very strong password</string>
+</resources>

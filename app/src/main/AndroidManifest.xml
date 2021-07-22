@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.voteon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/von"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/von"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SearchView"></activity>
+        <activity android:name=".search" />
+        <activity android:name=".ContestView" />
+        <activity android:name=".AddContest" />
+        <activity android:name=".GroupView" />
+        <activity android:name=".AddGroup" />
+        <activity android:name=".Profile" />
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Welcome" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
